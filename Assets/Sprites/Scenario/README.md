@@ -1,3 +1,3 @@
  # MoonMan - Sprites - Scenario
-Sprites: Backgrounds for parallex effect
+Sprites: Backgrounds for parallax effect
 
