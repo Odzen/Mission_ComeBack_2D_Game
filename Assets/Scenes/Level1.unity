@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 1363573650}
   - component: {fileID: 1363573653}
   - component: {fileID: 1363573654}
+  - component: {fileID: 1363573655}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -325,7 +326,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 98f770f99cd0bdc4ba7255ca11ff062c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -357,6 +358,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0.1
+--- !u!114 &1363573655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363573649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34159260fc1fbf4dbd53c1e25000c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+  isGrounded: 0
+  isMoving: 0
+  isInmune: 0
+  speed: 5
+  jumpForce: 7
+  movHor: 0
+  inmuneTimeCnt: 0
+  inmuneTime: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  radious: 0.3
+  groundRayDist: 0.55
 --- !u!1 &1825613966
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +395,7 @@ GameObject:
   - component: {fileID: 1825613969}
   - component: {fileID: 1825613968}
   - component: {fileID: 1825613967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
