@@ -20,6 +20,7 @@
 ## Table of contents
 
 - [Game Plot](#game-plot)
+- [Levels](#levels)
 
 ## Game Plot
 
@@ -30,4 +31,8 @@ In his journey, the astronaut can collect samples to take to them to earth, and 
 
 Along the way, the astronaut will try to collect as many samples as possible, but it will not be easy because there will be alien enemies and other obstacles like black holes, wild strange plants and many other dangerous things along the way that will try to kill him. 
 
-This game takes other games as a reference. Like Halo Reach from Bungie, Starfield from Bethesda, Gato Roboto from Doinksoft, No Man’s Sky from Hello Games, Jetpack and Lunar Jetman from Rare. And of course, Super Mario Bros from Nintendo.
+This game takes other games as a reference. Like Halo Games from Bungie and 343 Industries, Starfield from Bethesda, Gato Roboto from Doinksoft, No Man’s Sky from Hello Games, Jetpack and Lunar Jetman from Rare. And of course, Super Mario Bros from Nintendo. It also takes as a reference the contents of the course "Creating platform video games with Unity" by Steve Durán from Domestika.
+
+## Levels
+
+- Lvl1 - The Dark Forest: The astronaut falls into a thick and dark forest, his locator shows that one of the wings of his ship is not far away and he decides to go in search of it, but on the way he meets wild alien creatures that attack him. The art of the level is inspired by the mission 343 Guilty Spark from Halo: Combat Evolved and some concept art from Starfield.
