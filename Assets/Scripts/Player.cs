@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     {
         movHor = Input.GetAxisRaw("Horizontal");
         isMoving = (movHor != 0);
+        
         isGrounded = Physics2D.CircleCast(transform.position, radious, Vector3.down, groundRayDist, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space))
