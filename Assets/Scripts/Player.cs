@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     {
         movHor = Input.GetAxisRaw("Horizontal");
         isMoving = (movHor != 0);
+        
         isGrounded = Physics2D.CircleCast(transform.position, radious, Vector3.down, groundRayDist, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -87,6 +88,17 @@ public class Player : MonoBehaviour
         transform.localScale = theScale;
     }
     
+    public void getDamaged()
+    {
+        lives--;
+        if(lives<=0)
+            this.gameObject.SetActive(false);
+    }
+
+    public void bounceAfterKilledEnemy()
+    {
+        rb.velocity = Vector2.up * 2.5f;
+    }
 
     void OnDestroy()
     {
