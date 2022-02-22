@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
     private Rigidbody2D rb;
 
     public float movHor=0f;
@@ -29,34 +28,26 @@ public class Enemy : MonoBehaviour
         rb=GetComponent<Rigidbody2D>();
     }
 
-
     // Update is called once per frame
     void Update()
     {
-        /*
-        if(Game.obj.gamePaused)
-        {
-            return;
-        }
-        */
-
-        //Evitar caer precipicio
-        //Para checkear si tenemos un objeto de tipo ground en alguna distancia
+        //Avoid falling if there is not ground
+        //To check if we have an object of type ground in some distance
         isGroundFloor = (Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y - floorCheckY, transform.position.z),
             new Vector3(movHor, 0, 0), frontGrndRayDist, groundLayer));
-        //Que el enemigo se devuelva
+        //Enemy changes direction if there is not floor in the nex movement
         if(!isGroundFloor)
             movHor=movHor * -1;
 
-        //Choque con pared
+        //Collides with wall
         if (Physics2D.Raycast(transform.position, new Vector3(movHor, 0, 0), frontCheck, groundLayer))
             movHor = movHor * -1;
 
-        //Choque con otro enemigo
+        //Collides with other enemy
         hit = Physics2D.Raycast(new Vector3(transform.position.x + movHor*frontCheck, transform.position.y, transform.position.z),
             new Vector3(movHor, 0,0), frontDist);
 
-        if (hit != null)
+        if (hit)
             if (hit.transform != null)
                 if (hit.transform.CompareTag("Enemy"))
                     movHor = movHor * -1;
@@ -67,34 +58,31 @@ public class Enemy : MonoBehaviour
         rb.velocity = new Vector2(movHor * speed, rb.velocity.y);
     }
 
-    /*
+    // Collision with circle collider
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //Dañar Player si colisiona directamente
+        //Damage to the player
         if(collision.gameObject.CompareTag("Player"))
         {
             Player.obj.getDamaged();
         }
 
     }
-    */
-
-    /*
+    
+    // Collision with trigger - Box collider to check if the player jumped over
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //Destruir Enemy si colisiona por arriba, para esto se crea un box colider extra en unity
+        //Destroy the enemy if If the player collides from above
         if(collision.gameObject.CompareTag("Player"))
         {
-            AudioManager.obj.playEnemyHit();
             getKilled();
         }
 
     }
-    */
 
     void getKilled()
     {
-        //FxManager.obj.showPop(transform.position);
+        Debug.log("Asesion");
         gameObject.SetActive(false);
     }
 }
