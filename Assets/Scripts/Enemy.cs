@@ -64,9 +64,7 @@ public class Enemy : MonoBehaviour
         //Damage to the player
         if(collision.gameObject.CompareTag("Player"))
         {
-            
-            Debug.Log("Damage Player");
-            //Player.obj.getDamaged();
+            Player.obj.getDamaged();
         }
 
     }
@@ -77,6 +75,7 @@ public class Enemy : MonoBehaviour
         //Destroy the enemy if If the player collides from above
         if(collision.gameObject.CompareTag("Player"))
         {
+            Player.obj.bounceAfterKilledEnemy();
             getKilled();
         }
 
@@ -84,7 +83,6 @@ public class Enemy : MonoBehaviour
 
     void getKilled()
     {
-        Debug.Log("Killed Enemy");
         gameObject.SetActive(false);
     }
 }

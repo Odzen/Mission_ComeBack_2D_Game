@@ -235,7 +235,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!1 &733316629
 GameObject:
@@ -375,7 +375,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!1 &1128386901 stripped
 GameObject:
@@ -406,7 +406,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!1001 &840627630492969543
 PrefabInstance:
@@ -475,6 +475,10 @@ PrefabInstance:
     - target: {fileID: 5117605824542042117, guid: 5ce9bf66f5ae8a3419ce20ab04a5c6ba, type: 3}
       propertyPath: m_Name
       value: red_enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117605824542042117, guid: 5ce9bf66f5ae8a3419ce20ab04a5c6ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5117605824542042122, guid: 5ce9bf66f5ae8a3419ce20ab04a5c6ba, type: 3}
       propertyPath: m_RootOrder
@@ -580,6 +584,10 @@ PrefabInstance:
     - target: {fileID: 5327616922756610137, guid: 50637d16ccf89b34290c376eede5cbe7, type: 3}
       propertyPath: m_Name
       value: blue_enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327616922756610137, guid: 50637d16ccf89b34290c376eede5cbe7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50637d16ccf89b34290c376eede5cbe7, type: 3}

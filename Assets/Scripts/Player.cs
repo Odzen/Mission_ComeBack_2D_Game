@@ -88,6 +88,17 @@ public class Player : MonoBehaviour
         transform.localScale = theScale;
     }
     
+    public void getDamaged()
+    {
+        lives--;
+        if(lives<=0)
+            this.gameObject.SetActive(false);
+    }
+
+    public void bounceAfterKilledEnemy()
+    {
+        rb.velocity = Vector2.up * 2.5f;
+    }
 
     void OnDestroy()
     {
