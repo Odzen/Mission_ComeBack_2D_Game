@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
         rb.velocity = new Vector2(movHor * speed, rb.velocity.y);
     }
 
-    // Collision with circle collider
+    // Collision with main collider
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Damage to the player
