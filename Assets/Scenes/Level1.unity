@@ -329,8 +329,9 @@ GameObject:
   - component: {fileID: 488452105}
   - component: {fileID: 488452104}
   - component: {fileID: 488452103}
+  - component: {fileID: 488452106}
   m_Layer: 0
-  m_Name: alien_0
+  m_Name: skull_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,6 +494,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0.1
+--- !u!114 &488452106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488452099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea419f389de8a4408132b5f4adb8aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movHor: 1
+  speed: 3
+  isGroundFloor: 1
+  isGroundFront: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  frontGrndRayDist: 0.25
+  floorCheckY: 0.52
+  frontCheck: 0.51
+  frontDist: 0.001
+  scoreGive: 50
 --- !u!1 &595993271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5327616922756610137, guid: 50637d16ccf89b34290c376eede5cbe7, type: 3}
@@ -818,7 +843,7 @@ GameObject:
   - component: {fileID: 1999303274}
   - component: {fileID: 1999303273}
   m_Layer: 0
-  m_Name: flyingMartian_0
+  m_Name: flying_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

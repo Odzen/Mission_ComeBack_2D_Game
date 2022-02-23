@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour
             if (hit.transform != null)
                 if (hit.transform.CompareTag("Enemy"))
                     movHor = movHor * -1;
+        
+        flip(movHor);
     }
 
     void FixedUpdate()
@@ -79,6 +81,19 @@ public class Enemy : MonoBehaviour
             getKilled();
         }
 
+    }
+
+    public void flip(float _xValue)
+    {
+        Vector3 theScale = transform.localScale;
+
+        if (_xValue < 0)
+            theScale.x = Mathf.Abs(theScale.x) * -1;
+        else
+        if (_xValue>0)
+            theScale.x = Mathf.Abs(theScale.x);
+
+        transform.localScale = theScale;
     }
 
     void getKilled()
