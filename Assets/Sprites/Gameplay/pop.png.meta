@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: aff189ec84d2e708aaa9b12887f31f2a
+guid: d49f6afbd9c76e4389e0acee391b9fd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3359916698839239071
-    second: life_0
+      213: 2138976915490336560
+    second: pop_0
   - first:
-      213: -3930883525495038881
-    second: life_1
+      213: 4950762445130667216
+    second: pop_1
   - first:
-      213: -6974071674910835800
-    second: life_2
+      213: 282150700597745497
+    second: pop_2
   - first:
-      213: -5548975891121717205
-    second: life_3
+      213: 4940292643345117813
+    second: pop_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: life_0
+      name: pop_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 166b8c2609d2f51d0800000000000000
-      internalID: -3359916698839239071
+      spriteID: 03fef8efb2c2fad10800000000000000
+      internalID: 2138976915490336560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_1
+      name: pop_1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 32
         y: 0
-        width: 12
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cde61a242b279c0800000000000000
-      internalID: -3930883525495038881
+      spriteID: 0d49b5da634a4b440800000000000000
+      internalID: 4950762445130667216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_2
+      name: pop_2
       rect:
         serializedVersion: 2
-        x: 24
+        x: 64
         y: 0
-        width: 12
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab73da03ce173f90800000000000000
-      internalID: -6974071674910835800
+      spriteID: 957914a31966ae300800000000000000
+      internalID: 282150700597745497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_3
+      name: pop_3
       rect:
         serializedVersion: 2
-        x: 36
+        x: 96
         y: 0
-        width: 12
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20cb76a3d31ef2b0800000000000000
-      internalID: -5548975891121717205
+      spriteID: 572bf0dfbf17f8440800000000000000
+      internalID: 4940292643345117813
       vertices: []
       indices: 
       edges: []

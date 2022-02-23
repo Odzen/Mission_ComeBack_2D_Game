@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: aff189ec84d2e708aaa9b12887f31f2a
+guid: 0f34d15fa5bc812ff85a81c4670fddcf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3359916698839239071
-    second: life_0
+      213: 7720647189790038424
+    second: shine_0
   - first:
-      213: -3930883525495038881
-    second: life_1
+      213: 2067641770476914879
+    second: shine_1
   - first:
-      213: -6974071674910835800
-    second: life_2
+      213: -7762402546905152297
+    second: shine_2
   - first:
-      213: -5548975891121717205
-    second: life_3
+      213: -583034445407892038
+    second: shine_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: life_0
+      name: shine_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 12
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 166b8c2609d2f51d0800000000000000
-      internalID: -3359916698839239071
+      spriteID: 8999d8f96bf352b60800000000000000
+      internalID: 7720647189790038424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_1
+      name: shine_1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 15
         y: 0
-        width: 12
-        height: 12
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cde61a242b279c0800000000000000
-      internalID: -3930883525495038881
+      spriteID: fb849044c3db1bc10800000000000000
+      internalID: 2067641770476914879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_2
+      name: shine_2
       rect:
         serializedVersion: 2
-        x: 24
+        x: 30
         y: 0
-        width: 12
-        height: 12
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab73da03ce173f90800000000000000
-      internalID: -6974071674910835800
+      spriteID: 7d48124b208664490800000000000000
+      internalID: -7762402546905152297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: life_3
+      name: shine_3
       rect:
         serializedVersion: 2
-        x: 36
+        x: 45
         y: 0
-        width: 12
-        height: 12
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20cb76a3d31ef2b0800000000000000
-      internalID: -5548975891121717205
+      spriteID: abd45adc245a8e7f0800000000000000
+      internalID: -583034445407892038
       vertices: []
       indices: 
       edges: []

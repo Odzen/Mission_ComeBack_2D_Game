@@ -100,6 +100,14 @@ public class Player : MonoBehaviour
         rb.velocity = Vector2.up * 2.5f;
     }
 
+    public void addLive()
+    {
+        lives++;
+
+        if(lives > Game.obj.maxLives)
+            lives = Game.obj.maxLives;
+    }
+
     void OnDestroy()
     {
         obj = null;
