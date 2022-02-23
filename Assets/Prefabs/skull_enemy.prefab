@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movHor: 1
-  speed: 3
+  speed: 5
   isGroundFloor: 1
   isGroundFront: 0
   groundLayer:
@@ -202,4 +202,4 @@ MonoBehaviour:
   floorCheckY: 0.52
   frontCheck: 0.51
   frontDist: 0.001
-  scoreGive: 50
+  scoreGive: 100

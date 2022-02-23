@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4812500680991617351}
   - component: {fileID: 4812500680991617352}
   - component: {fileID: 4812500680991617354}
+  - component: {fileID: 1475276278}
+  - component: {fileID: 1475276277}
   m_Layer: 0
   m_Name: flying_enemy
   m_TagString: Enemy
@@ -138,7 +140,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4812500680991617348}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -151,3 +153,56 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!60 &1475276278
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812500680991617348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5, y: 0.375}
+      - {x: 0.41761184, y: 0.37785578}
+      - {x: 0.28423625, y: 0.3767128}
+      - {x: -0.2829662, y: 0.3718524}
+      - {x: -0.4545529, y: 0.3551321}
+      - {x: -0.5, y: -0.21875}
+      - {x: -0.24151444, y: -0.13354683}
+      - {x: -0.26136172, y: -0.35227633}
+      - {x: 0.010727763, y: -0.27899122}
+      - {x: 0.25, y: -0.34091425}
+      - {x: 0.26551542, y: -0.13626528}
+      - {x: 0.47727633, y: -0.21307945}
+--- !u!114 &1475276277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812500680991617348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811cd5ff0fdc8214188644d534eba676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  chase: 0
+  startingPoint: {fileID: 0}
+  scoreGive: 100
