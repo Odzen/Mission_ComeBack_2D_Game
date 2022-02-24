@@ -9,6 +9,7 @@ public class Life : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player.obj.addLive();
+            AudioManager.obj.playLife();
         
             FXManager.obj.showPop(transform.position);
             gameObject.SetActive(false);

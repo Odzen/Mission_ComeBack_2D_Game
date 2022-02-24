@@ -60,7 +60,24 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.CircleCast(transform.position, radious, Vector3.down, groundRayDist, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             jump();
+        }
+            
+        
+        if(isInmune)
+        {
+            spr.enabled = !spr.enabled;
+
+            inmuneTimeCnt -= Time.deltaTime;
+
+            if(inmuneTimeCnt <= 0)
+            {
+                isInmune = false;
+                spr.enabled = true;
+            }
+        }
+        
         
         anim.SetBool("isMoving",isMoving);
         anim.SetBool("isGrounded",isGrounded);
@@ -79,12 +96,19 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(movHor * speed, rb.velocity.y);
     }
 
+    private void goInmune()
+    {
+        isInmune = true;
+        inmuneTimeCnt = inmuneTime;
+    }
+
     
     public void jump()
     {
         if (!isGrounded) return;
 
         rb.velocity = Vector2.up * jumpForce;
+        AudioManager.obj.playJump();
     }
     
     
@@ -105,6 +129,9 @@ public class Player : MonoBehaviour
     public void getDamaged()
     {
         lives--;
+        AudioManager.obj.playHit();
+
+        goInmune();
 
         UIManager.obj.updateLives();
         if(lives<=0)

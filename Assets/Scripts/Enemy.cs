@@ -81,6 +81,7 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Player.obj.bounceAfterKilledEnemy();
+            AudioManager.obj.playEnemyHit();
             getKilled();
         }
 
