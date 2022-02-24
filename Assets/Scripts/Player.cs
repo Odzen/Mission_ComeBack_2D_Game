@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     //Singletone
     public static Player obj;
     
-    public int lives = 5;
+    public int lives = 3;
     public bool isGrounded = false;
     public bool isMoving = false;
     public bool isInmune = false;
