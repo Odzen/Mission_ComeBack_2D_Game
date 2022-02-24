@@ -11,6 +11,8 @@ public class Soilsample : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Game.obj.addScore(scoreGive);
+
+            UIManager.obj.updateScore();
             FXManager.obj.showPop(transform.position);
             gameObject.SetActive(false);
         }

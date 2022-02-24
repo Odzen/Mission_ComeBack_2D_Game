@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     //Singletone
     public static Player obj;
     
-    public int lives = 3;
+    public int lives = 5;
     public bool isGrounded = false;
     public bool isMoving = false;
     public bool isInmune = false;
@@ -46,6 +46,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if(Game.obj.gamePaused)
+        {
+            movHor=0f;
+            return;
+        }
+        
+
         movHor = Input.GetAxisRaw("Horizontal");
         isMoving = (movHor != 0);
         
@@ -97,9 +105,10 @@ public class Player : MonoBehaviour
     public void getDamaged()
     {
         lives--;
+
+        UIManager.obj.updateLives();
         if(lives<=0)
         {
-            //this.gameObject.SetActive(false);
             FXManager.obj.showPop(transform.position);
             Game.obj.gameOver();
         }
@@ -113,9 +122,12 @@ public class Player : MonoBehaviour
     public void addLive()
     {
         lives++;
+        
 
         if(lives > Game.obj.maxLives)
             lives = Game.obj.maxLives;
+
+        UIManager.obj.updateLives();
     }
 
     void OnDestroy()
