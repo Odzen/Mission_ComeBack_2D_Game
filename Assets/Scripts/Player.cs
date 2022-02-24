@@ -89,6 +89,8 @@ public class Player : MonoBehaviour
         if(transform.position.y <= -1)
         {
             FXManager.obj.showPop(transform.position);
+            AudioManager.obj.playGameOver();
+            Thread.Sleep(1000);
             Game.obj.gameOver();
         }
     }
