@@ -57,7 +57,13 @@ public class Player : MonoBehaviour
         anim.SetBool("isMoving",isMoving);
         anim.SetBool("isGrounded",isGrounded);
 
-        flip(movHor); 
+        flip(movHor);
+
+        if(transform.position.y <= -1)
+        {
+            FXManager.obj.showPop(transform.position);
+            Game.obj.gameOver();
+        }
     }
 
     void FixedUpdate()
