@@ -12,6 +12,8 @@ public class Soilsample : MonoBehaviour
         {
             Game.obj.addScore(scoreGive);
 
+            AudioManager.obj.playSoilSample();
+
             UIManager.obj.updateScore();
             FXManager.obj.showPop(transform.position);
             gameObject.SetActive(false);

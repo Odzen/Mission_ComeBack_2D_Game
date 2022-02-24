@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     public static Game obj;
-    public int maxLives = 3;
+    public int maxLives = 20;
     public bool gamePaused = false;
     public int score = 0;
 
