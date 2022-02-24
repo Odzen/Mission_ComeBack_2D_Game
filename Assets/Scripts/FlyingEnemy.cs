@@ -57,6 +57,7 @@ public class FlyingEnemy : MonoBehaviour
 
     void getKilled()
     {
+        FXManager.obj.showPop(transform.position);
         gameObject.SetActive(false);
     }
 
