@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
 
         flip(movHor);
 
-        if(transform.position.y <= 1.5)
+        if(transform.position.y <= -1)
         {
             FXManager.obj.showPop(transform.position);
             Game.obj.gameOver();
