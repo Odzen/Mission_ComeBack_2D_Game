@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         //Avoid falling if there is not ground
         //To check if we have an object of type ground in some distance
         isGroundFloor = (Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y - floorCheckY, transform.position.z),
@@ -53,6 +55,7 @@ public class Enemy : MonoBehaviour
                     movHor = movHor * -1;
         
         flip(movHor);
+        
     }
 
     void FixedUpdate()
