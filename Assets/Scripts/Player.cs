@@ -92,7 +92,11 @@ public class Player : MonoBehaviour
     {
         lives--;
         if(lives<=0)
-            this.gameObject.SetActive(false);
+        {
+            //this.gameObject.SetActive(false);
+            FXManager.obj.showPop(transform.position);
+            Game.obj.gameOver();
+        }
     }
 
     public void bounceAfterKilledEnemy()
