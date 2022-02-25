@@ -22,6 +22,11 @@ public class MainMenuUIManager : MonoBehaviour
         SceneManager.LoadScene("Rules");
     }
 
+    public void story()
+    {
+        SceneManager.LoadScene("Story");
+    }
+
     void OnDestroy()
     {
         obj=null;
