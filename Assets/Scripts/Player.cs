@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Threading;
 
 
 public class Player : MonoBehaviour
@@ -87,6 +89,8 @@ public class Player : MonoBehaviour
         if(transform.position.y <= -1)
         {
             FXManager.obj.showPop(transform.position);
+            AudioManager.obj.playGameOver();
+            Thread.Sleep(1000);
             Game.obj.gameOver();
         }
     }
@@ -137,6 +141,8 @@ public class Player : MonoBehaviour
         if(lives<=0)
         {
             FXManager.obj.showPop(transform.position);
+            AudioManager.obj.playGameOver();
+            Thread.Sleep(1000);
             Game.obj.gameOver();
         }
     }
