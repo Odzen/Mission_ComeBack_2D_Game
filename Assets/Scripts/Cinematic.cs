@@ -16,7 +16,7 @@ public class Cinematic : MonoBehaviour
     void Update () {
         currentTime = Math.Truncate(gameObject.GetComponent<VideoPlayer> ().time);
         if (currentTime >= time) {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("MiainMenu");
         }
     }
 }
