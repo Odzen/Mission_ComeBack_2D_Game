@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class UIManager : MonoBehaviour
     public void updateScore()
     {
         scoreLbl.text=""+ Game.obj.score;
+    }
+    
+    public void loadScene()
+    {
+        SceneManager.LoadScene("MiainMenu");
     }
     
     void OnDestroy()
