@@ -18,6 +18,11 @@ public class Level_UI : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MiainMenu");
+    }
+
     void OnDestroy()
     {
         obj=null;
