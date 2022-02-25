@@ -2104,11 +2104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8925508217261547199, guid: 9c70545b41d29bb488f575afc47c17f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 75.43
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: 8925508217261547199, guid: 9c70545b41d29bb488f575afc47c17f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.47
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 8925508217261547199, guid: 9c70545b41d29bb488f575afc47c17f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2476,6 +2476,22 @@ PrefabInstance:
     - target: {fileID: 3502648503287371840, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
       propertyPath: m_Text
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502648503411007810, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502648503411007811, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502648503411007811, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502648503411007811, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3502648503682923044, guid: 8a7eccb659e256441af0262236e13f9e, type: 3}
       propertyPath: m_Camera
