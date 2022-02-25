@@ -10,18 +10,12 @@ public class Cinematic : MonoBehaviour
 {
     public double time;
     public double currentTime;
-    // Use this for initialization
     void Start () {
-    time = gameObject.GetComponent<VideoPlayer> ().clip.length;
+    time = Math.Truncate(gameObject.GetComponent<VideoPlayer> ().clip.length);
     }
- 
-   
-    // Update is called once per frame
     void Update () {
-        currentTime = gameObject.GetComponent<VideoPlayer> ().time;
-        Debug.Log ("//CURRENT TIME");
-        Debug.Log (currentTime);
-        if (currentTime >= 60.92) {
+        currentTime = Math.Truncate(gameObject.GetComponent<VideoPlayer> ().time);
+        if (currentTime >= time) {
             SceneManager.LoadScene("Level1");
         }
     }
