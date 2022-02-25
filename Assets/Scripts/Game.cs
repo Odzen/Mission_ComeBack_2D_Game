@@ -19,7 +19,6 @@ public class Game : MonoBehaviour
     void Start()
     {
         gamePaused = false;
-        UIManager.obj.startGame();
     }
 
     public void addScore(int scoreGive)

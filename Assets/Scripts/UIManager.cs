@@ -10,8 +10,6 @@ public class UIManager : MonoBehaviour
     public Text scoreLbl;
     public Text livesLbl;
 
-    public Transform UIPanel;
-
 
     void Awake()
     {
@@ -27,19 +25,7 @@ public class UIManager : MonoBehaviour
     {
         scoreLbl.text=""+ Game.obj.score;
     }
-
-    public void startGame()
-    {
-        Game.obj.gamePaused=true;
-        UIPanel.gameObject.SetActive(true);
-    }
-
-    public void hideInitPanel()
-    {
-        Game.obj.gamePaused=false;
-        UIPanel.gameObject.SetActive(false);
-    }
-
+    
     void OnDestroy()
     {
         obj=null;
