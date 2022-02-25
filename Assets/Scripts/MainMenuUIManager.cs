@@ -12,9 +12,14 @@ public class MainMenuUIManager : MonoBehaviour
         obj=this;
     }
 
-    public void loadScene()
+    public void levelSelector()
     {
         SceneManager.LoadScene("Level_selector");
+    }
+
+    public void rules()
+    {
+        SceneManager.LoadScene("Rules");
     }
 
     void OnDestroy()
