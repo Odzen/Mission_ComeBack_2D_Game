@@ -24,7 +24,7 @@
 
 ## Game Plot
 
-An astronaut scientist was sent on a mission to collect soil, air and water samples from a distant planet to find out if it can be inhabited by humans.
+Year 2362. An astronaut scientist was sent on a mission to collect soil, air and water samples from a distant planet to find out if it can be inhabited by humans.
 When he was landing on the planet his ship had some faults and it ended up destroyed in parts. Fortunately, the astronaut survived, and now his main mission is to find the parts of his ship in order to rebuild it and return to earth.
 
 In his journey, the astronaut can collect samples to take to them to earth, and the more samples he finds, the more points he will earn. The idea is that each level ends when the astronaut finds a piece of his ship, and there will be approximately 7 levels.
@@ -36,3 +36,15 @@ This game takes other games as a reference. Like Halo Games from Bungie and 343 
 ## Levels
 
 - Lvl1 - The Dark Forest: The astronaut falls into a thick and dark forest, his locator shows that one of the wings of his ship is not far away and he decides to go in search of it, but on the way he meets wild alien creatures that attack him. The art of the level is inspired by the mission 343 Guilty Spark from Halo: Combat Evolved and some concept art from Starfield.
+
+-Lvl2 - The Cave
+
+-Lvl3 - The Desert
+
+-Lvl4 - The Meadow
+
+-Lvl5 - The Tundra
+
+-Lvl6 - The Rocky Mountains
+
+-Lvl7 - The Volcano
