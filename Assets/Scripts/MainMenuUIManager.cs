@@ -3,10 +3,9 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Level_UI : MonoBehaviour
+public class MainMenuUIManager : MonoBehaviour
 {
-    public static Level_UI obj;
-
+    public static MainMenuUIManager obj;
 
     void Awake()
     {
@@ -15,12 +14,11 @@ public class Level_UI : MonoBehaviour
 
     public void loadScene()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_selector");
     }
 
     void OnDestroy()
     {
         obj=null;
     }
-
 }
