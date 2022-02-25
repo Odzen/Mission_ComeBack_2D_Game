@@ -27,6 +27,11 @@ public class MainMenuUIManager : MonoBehaviour
         SceneManager.LoadScene("Story");
     }
 
+    public void credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     void OnDestroy()
     {
         obj=null;
