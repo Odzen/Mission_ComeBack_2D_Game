@@ -37,14 +37,45 @@ This game takes other games as a reference. Like Halo Games from Bungie and 343 
 
 - Lvl1 - The Dark Forest: The astronaut falls into a thick and dark forest, his locator shows that one of the wings of his ship is not far away and he decides to go in search of it, but on the way he meets wild alien creatures that attack him. The art of the level is inspired by the mission 343 Guilty Spark from Halo: Combat Evolved and some concept art from Starfield.
 
--Lvl2 - The Cave
+- Lvl2 - The Cave
 
--Lvl3 - The Desert
+- Lvl3 - The Desert
 
--Lvl4 - The Meadow
+- Lvl4 - The Meadow
 
--Lvl5 - The Tundra
+- Lvl5 - The Tundra
 
--Lvl6 - The Rocky Mountains
+- Lvl6 - The Rocky Mountains
 
--Lvl7 - The Volcano
+- Lvl7 - The Volcano
+
+## Credits
+
+**Game Developed By**
+- David Tello
+- Carlos Tovar
+- Sebastián Velásquez
+
+**Reference sprites**
+- Steve Durán
+
+**Sprites By**
+- Carlos Tovar
+- David Tello
+
+**Cinematic By**
+- Carlos Tovar
+
+**Gameplay Sounds**
+- Enemy Hit - mixkit.co
+- Game Over - Steve Durán
+- Hero Hit - Steve Durán
+- Jump - Steve Durán
+- Life - mixkit.co
+- Soil Sample - freesound.org
+- Win - freesound.org
+
+**Music**
+- "Changes" from fiftysounds.com
+- "Random Sequences" from fiftysounds.com
+- "Sci Fi" by Benjamin Tissot from bensound.com
